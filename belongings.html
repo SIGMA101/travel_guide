@@ -1,17 +1,110 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>持ち物</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>持ち物リスト</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #00a1c9;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    h2 {
+      color: #007bff;
+      margin-top: 25px;
+      border-left: 5px solid #007bff;
+      padding-left: 10px;
+      font-size: 1.2em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: white;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      transition: background-color 0.2s;
+    }
+
+    li:hover {
+      background-color: #f1faff;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <h1>持ち物</h1>
-  <!-- <div class="member-list" id="memberList"></div> -->
+  <header>
+    沖縄旅行 持ち物リスト
+  </header>
 
-  <p><a href="index.html">← トップへ戻る</a></p>
+  <main>
+    <h2>必需品</h2>
+    <ul>
+      <li><input type="checkbox">スマートフォン</li>
+      <li><input type="checkbox">財布（現金・カード）</li>
+      <li><input type="checkbox">航空券（QRコード）</li>
+      <li><input type="checkbox">身分証（運転免許証など）</li>
+    </ul>
 
-  <!-- <script src="js/members.js"></script> -->
+    <h2>衣類</h2>
+    <ul>
+      <li><input type="checkbox">Tシャツ</li>
+      <li><input type="checkbox">短パン</li>
+      <li><input type="checkbox">サンダル</li>
+      <li><input type="checkbox">水着</li>
+    </ul>
+
+    <h2>便利グッズ</h2>
+    <ul>
+      <li><input type="checkbox">日焼け止め</li>
+      <li><input type="checkbox">モバイルバッテリー</li>
+      <li><input type="checkbox">カメラ</li>
+      <li><input type="checkbox">折りたたみ傘</li>
+    </ul>
+
+    <p><a href="index.html">← トップへ戻る</a></p>
+  </main>
+
+  <footer>
+    &copy; 2025 Okinawa Travel Guide
+  </footer>
 </body>
 </html>

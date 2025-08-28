@@ -1,18 +1,108 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>やりたいこと</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>やりたいことリスト</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #00a1c9;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    main {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    h2 {
+      color: #007bff;
+      margin-top: 25px;
+      border-left: 5px solid #007bff;
+      padding-left: 10px;
+      font-size: 1.2em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: white;
+      margin: 8px 0;
+      padding: 12px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      transition: background-color 0.2s;
+    }
+
+    li:hover {
+      background-color: #f1faff;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.3);
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-  <h1>やりたいこと</h1>
+  <header>
+    沖縄旅行 やりたいことリスト
+  </header>
 
-  <h2>みんなでプリクラ</h2>
+  <main>
+    <h2>観光スポット</h2>
+    <ul>
+      <li><input type="checkbox">美ら海水族館に行く</li>
+      <li><input type="checkbox">国際通りで食べ歩き</li>
+      <li><input type="checkbox">首里城を観光</li>
+      <li><input type="checkbox">古宇利島ドライブ</li>
+    </ul>
 
-  <p><a href="index.html">← トップへ戻る</a></p>
+    <h2>アクティビティ</h2>
+    <ul>
+      <li><input type="checkbox">シュノーケリング</li>
+      <li><input type="checkbox">パラセーリング</li>
+      <li><input type="checkbox">ビーチで夕日を見る</li>
+    </ul>
 
-  <!-- <script src="js/members.js"></script> -->
+    <h2>食べたいもの</h2>
+    <ul>
+      <li><input type="checkbox">沖縄そば</li>
+      <li><input type="checkbox">アグー豚しゃぶしゃぶ</li>
+      <li><input type="checkbox">ブルーシールアイス</li>
+    </ul>
+
+    <p><a href="index.html">← トップへ戻る</a></p>
+  </main>
+
+  <footer>
+    &copy; 2025 Okinawa Travel Guide
+  </footer>
 </body>
 </html>
