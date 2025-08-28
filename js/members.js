@@ -4,28 +4,32 @@ const members = [
     nickname: "ぞむ",
     todo: "自然を感じたい",
     favorite: "カメラ",
-    comment: "どすこい"
+    comment: "どすこい",
+    img: "images/members/nozomu.jpeg"
   },
   {
     name: "佐伯健太",
     nickname: "たんけ",
     todo: "ダイビング",
     favorite: "ドライブ",
-    comment: "わっしょい"
+    comment: "わっしょい",
+    img: "images/members/kenta.JPG"
   },
   {
     name: "西野椛",
     nickname: "もーちゃん",
     todo: "シーサーづくり",
     favorite: "アイドル",
-    comment: "ドーナッツ"
+    comment: "ドーナッツ",
+    img: "images/members/momiji.JPG"
   },
   {
     name: "小川竜聖",
     nickname: "リューリュー",
     todo: "一発ギャグ",
     favorite: "イカゲーム",
-    comment: "偏見"
+    comment: "偏見",
+    img: "images/members/ryusei.JPG"
   }
   // 追加はここにどんどん書くだけ！
 ];
@@ -37,6 +41,7 @@ members.forEach(member => {
   card.className = "member-card";
 
   card.innerHTML = `
+  <img src="${member.img}" alt="${member.name}" class="member-photo">
     <h2>${member.name}（${member.nickname}）</h2>
     <p><strong>やりたいこと：</strong> ${member.todo}</p>
     <p><strong>好きなもの：</strong> ${member.favorite}</p>
