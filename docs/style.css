@@ -1,15 +1,191 @@
 body {
-    font-family: sans-serif;
-    background-color: #eef9ff;
-    padding: 2rem;
-    color: #333;
+  font-family: sans-serif;
+  background-color: #eef9ff;
+  padding: 2rem;
+  color: #333;
+}
+
+body {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+h1 {
+  color: #0077cc;
+}
+
+a {
+  color: #0066aa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 h1 {
-    color: #0077cc;
+  font-size: 1.5rem;
+}
+a {
+  padding: 0.75rem;
+  display: inline-block;
 }
 
-h2,
-h3 {
-    color: #005577;
+.card-link {
+  display: block;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #eef;
+  border-radius: 8px;
+  text-decoration: none;
 }
+
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+.member-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.member-card {
+  background-color: #f0f8ff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.site-header {
+  background-color: #ffefd5;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.site-header h1 {
+  margin: 0.2em 0;
+  font-size: 1.5rem;
+}
+
+.nav-container {
+  margin-top: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 1.5rem; /* 横の余白を調整 */
+  flex-wrap: wrap; /* スマホで折り返し可能に */
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.image-gallery {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.image-scroll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.image-scroll img {
+  flex: 0 0 100%;
+  max-height: 300px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.image-gallery {
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-scroll {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+}
+
+.image-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.image-scroll img {
+  flex: 0 0 100%;
+  max-height: 300px;
+  object-fit: cover;
+  scroll-snap-align: start;
+  border-radius: 8px;
+}
+
+.carousel-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel img {
+  flex: 0 0 100%;
+  max-height: 300px;
+  object-fit: cover;
+  scroll-snap-align: center;
+  pointer-events: none;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+
+.swiper-slide {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+

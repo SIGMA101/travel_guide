@@ -4,31 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <title>沖縄旅行しおり</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
-    <h1>🌴 沖縄旅行しおり 2025 🌺</h1>
-    <h2>📅 日程：2025年9月11日（木）〜13日（土）</h2>
 
-    <h3>Day 1（9/11 木）</h3>
-    <ul>
-        <li>那覇空港 到着</li>
-        <li>国際通り 散策</li>
-        <li>ホテルチェックイン</li>
-    </ul>
+    <section class="carousel-wrapper">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/images/okinawa1.jpg" /></div>
+                <div class="swiper-slide"><img src="/images/okinawa2.jpg" /></div>
+                <div class="swiper-slide"><img src="/images/okinawa3.jpg" /></div>
+            </div>
+        </div>
 
-    <h3>Day 2（9/12 金）</h3>
-    <ul>
-        <li>美ら海水族館</li>
-        <li>古宇利島 ドライブ</li>
-    </ul>
+        </div>
+    </section>
 
-    <h3>Day 3（9/13 土）</h3>
-    <ul>
-        <li>アメリカンビレッジ 散策</li>
-        <li>那覇空港から帰宅</li>
-    </ul>
+
+
+    <header class="site-header">
+        <h1>🌺 沖縄旅行しおり</h1>
+        <nav class="nav-container">
+            <ul class="nav-links">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="members.html">メンバー</a></li>
+                <li><a href="day1.html">Day 1</a></li>
+                <li><a href="day2.html">Day 2</a></li>
+                <li><a href="day3.html">Day 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>📅 日程</h2>
+            <ul>
+                <li><a href="day1.html">Day 1 - 9/11</a></li>
+                <li><a href="day2.html">Day 2 - 9/12</a></li>
+                <li><a href="day3.html">Day 3 - 9/13</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>👥 メンバー紹介</h2>
+            <p><a href="members.html">メンバー紹介ページへ</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 沖縄旅行しおり | 作成者: かみざわ</p>
+    </footer>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
